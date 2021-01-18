@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/splash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:outlineProvider="background"
+        android:background="@drawable/splash"
+        tools:ignore="MissingConstraints" >
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/covid_zone_"-->
+<!--            android:layout_width="272dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="81dp"-->
+<!--            android:layout_marginTop="244dp"-->
+<!--            android:gravity="center_horizontal|top"-->
+<!--            android:text="@string/covid_zone_"-->
+<!--            android:textAppearance="@style/covid_zone_" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/version_0_1"-->
+<!--            android:layout_width="67dp"-->
+<!--            android:layout_height="16dp"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="175dp"-->
+<!--            android:layout_marginTop="680dp"-->
+<!--            android:gravity="center_horizontal|top"-->
+<!--            android:text="@string/version_0_1"-->
+<!--            android:textAppearance="@style/version_0_1" />-->
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
