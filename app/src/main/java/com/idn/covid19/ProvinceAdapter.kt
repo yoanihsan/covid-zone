@@ -1,5 +1,6 @@
 package com.idn.covid19
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -65,15 +66,17 @@ class ProvinceAdapter(val country: ArrayList<AllProvIndo>, val clickListener: (A
         val tvTotalCase = itemView.findViewById<TextView>(R.id.txt_total_case)
         val tvTotalRecovered = itemView.findViewById<TextView>(R.id.txt_total_recovered)
         val tvTotalDeaths = itemView.findViewById<TextView>(R.id.txt_total_deaths)
+        val tvStatus = itemView.findViewById<TextView>(R.id.status)
         val imgFlag = itemView.findViewById<ImageView>(R.id.img_flag_country)
 
         fun bindItem(countries: AllProvIndo, clickListener: (AllProvIndo) -> Unit){
             tvCountry.text = countries.attributes.Provinsi
-
             val formatter: NumberFormat = DecimalFormat("#,###")
             tvTotalCase.text = formatter.format(countries.attributes.Kasus_Posi)
             tvTotalRecovered.text = formatter.format(countries.attributes.Kasus_Semb)
             tvTotalDeaths.text = formatter.format(countries.attributes.Kasus_Meni)
+            tvStatus.text =  "Merah"
+            tvStatus.setTextColor(Color.parseColor("#f54242"))
             itemView.setOnClickListener{ clickListener(countries) }
 
             Glide.with(itemView.context)

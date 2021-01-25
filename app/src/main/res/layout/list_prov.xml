@@ -37,6 +37,10 @@
             android:text="@string/deaths"
             style="@style/TextListCountryTotal"/>
 
+        <TextView
+            android:id="@+id/status"
+            android:text="@string/Status"
+            style="@style/TextListCountryTotal"/>
 
 
     </LinearLayout>

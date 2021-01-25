@@ -6,4 +6,5 @@
     <string name="countries">Countries</string>
     <string name="cases">Case</string>
     <string name="Provinsi">Provinsi</string>
+    <string name="Status">Status Zona</string>
 </resources>
