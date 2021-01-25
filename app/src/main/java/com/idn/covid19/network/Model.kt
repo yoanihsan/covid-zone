@@ -6,7 +6,20 @@ data class AllCountries(
 
 )
 
-data class World(
+data class AllProvIndo(
+    val attributes: Provinsi
+)
+
+data class Provinsi(
+    val FID: Integer,
+    val Kode_Provi: Integer,
+    val Provinsi: String = "",
+    val Kasus_Posi: Integer,
+    val Kasus_Semb: Integer,
+    val Kasus_Meni: Integer
+)
+
+ data class World(
     val TotalConfirmed: String = "",
     val TotalRecovered: String = "",
     val TotalDeaths: String = ""

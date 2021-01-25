@@ -17,12 +17,20 @@
             </intent-filter>
         </activity>
         <activity android:name="com.idn.covid19.ChartCountryActivity"></activity>
+        <activity android:name="com.idn.covid19.ChartProvinceActivity"></activity>
         <activity android:name="com.idn.covid19.MainActivity">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
+        </activity>
+        <activity android:name="com.idn.covid19.MainActivityProv">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
         </activity>
         <activity android:name="com.idn.covid19.HalamanUtama">
             <!--            <intent-filter>-->

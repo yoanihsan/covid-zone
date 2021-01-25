@@ -13,6 +13,7 @@ class HalamanUtama  : AppCompatActivity() {
     private var txtUsername: TextView? = null
     private var keluar: Button? = null
     private var info: Button? = null
+    private var infoProv: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +30,12 @@ class HalamanUtama  : AppCompatActivity() {
         info = findViewById<View>(R.id.btnInfoCovid) as Button
         info!!.setOnClickListener{
             val i = Intent(this@HalamanUtama, MainActivity::class.java)
+            startActivity(i)
+        }
+
+        infoProv = findViewById<View>(R.id.btnInfoCovidProvinsi) as Button
+        infoProv!!.setOnClickListener{
+            val i = Intent(this@HalamanUtama, MainActivityProv::class.java)
             startActivity(i)
         }
     }

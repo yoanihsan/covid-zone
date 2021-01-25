@@ -14,3 +14,8 @@ interface InfoService{
     fun getInfoService(@Url url: String?): Call<List<InfoCountry>> // Pada constructor metode, dibuatkan variabel dengan
                                                                   // anotasi @Url untuk directory dinamisnya
 }
+
+interface InfoIndoService{
+    @GET("indonesia/provinsi/") // GET data dari directory summary
+    fun getAllProvIndonesia(): Call<List<AllProvIndo>> // membuat metode guna menentukan struktur JSON yang ingin diajak bertransaksi
+}
